@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Опрос предприятий</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f5;
+      color: #18181b;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid #e4e4e7;
+      padding: 16px;
+    }
+
+    .wrap {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px 16px 60px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    .shot {
+      background: white;
+      border-radius: 18px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+      overflow: hidden;
+      border: 1px solid #e4e4e7;
+    }
+
+    .shot-title {
+      padding: 10px 14px;
+      font-size: 14px;
+      color: #52525b;
+      border-bottom: 1px solid #e4e4e7;
+    }
+
+    .shot img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 20px;
+      }
+
+      .shot {
+        border-radius: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Опрос предприятий</h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="gallery">
+      <!--
+        Сюда добавляй свои скрины.
+        Положи картинки в папку рядом с этим HTML-файлом, например в папку images.
+        Потом меняй src на нужный путь: images/screen1.png
+      -->
+
+      <section class="shot">
+        <div class="shot-title">Скрин 1</div>
+        <img src="1skrin.png" alt="Скрин 1">
+      </section>
+
+      <section class="shot">
+        <div class="shot-title">Скрин 2</div>
+        <img src="2skrin.png" alt="Скрин 2">
+      </section>
+
+      <section class="shot">
+        <div class="shot-title">Скрин 3</div>
+        <img src="3skrin.png" alt="Скрин 3">
+      </section>
+
+      <section class="shot">
+        <div class="shot-title">Скрин 4</div>
+        <img src="4skrin.png" alt="Скрин 4">
+      </section>
+
+
+      <section class="shot">
+        <div class="shot-title">Скрин 5</div>
+        <img src="skrin5.png" alt="Скрин 5">
+      </section>
+
+      <section class="shot">
+        <div class="shot-title">Скрин 6</div>
+        <img src="skrin6.png" alt="Скрин 6">
+      </section>
+
+    </div>
+  </main>
+
+  <footer style="max-width: 900px; margin: 0 auto; padding: 0 16px 24px;">
+    <div style="font-size: 11px; color: #71717a; text-align: right; line-height: 1.5;">
+      Опрос проходили малые кондитерские предприятия, частные предприниматели-кондитеры, а также кондитеры компаний "FrenchKiss", "Шоколад 27", "HappyBerry".
+    </div>
+  </footer>
+</body>
+</html>
